@@ -1,0 +1,90 @@
+class Cafeteria:
+    def meals(self):
+        print("Enter the Quantity ")
+        m = int(input())
+        c = m*100
+        return c
+
+    def chapathi(self):
+        print("Enter the Quantity ")
+        m = int(input())
+        c = m*30
+        return c
+
+    def noodles(self):
+        print("Enter the Quantity ")
+        m = int(input())
+        c = m*40
+        return c
+
+    def coffee(self):
+        print("Enter the Quantity ")
+        m = int(input())
+        c = m*15
+        return c
+
+    def Tea(self):
+        print("Enter the Quantity ")
+        m = int(input())
+        c = m*12
+        return c
+
+    def Pizza(self):
+        print("Enter the Quantity ")
+        m = int(input())
+        c = m*30
+        return c
+
+    def Burger(self):
+        print("Enter the Quantity ")
+        m = int(input())
+        c = m*35
+        return c
+
+    def French_Fries(self):
+        print("Enter the Quantity ")
+        m = int(input())
+        c = m*25
+        return c
+
+    def Dosa(self):
+        print("Enter the Quantity ")
+        m = int(input())
+        c = m*20
+        return c
+obj = Cafeteria()
+b = 0
+print("Welcome to Cafeteria")
+print("Please select the necessities that are available")
+print("1 for Meals the cost is 50/-")
+print("2 for Chapthi the cost is 30/-")
+print("3 for noodles the cost is 40/-")
+print("4 for coffee the cost is 15/-")
+print("5 for Tea the cost is 12/-")
+print("6 for Pizza the cost is 30/-")
+print("7 for Burger the cost is 35/-")
+print("8 for French_Fries the cost is 25/-")
+print("9 for Dosa the cost is 20/-")
+while 1:
+    N = int(input("Enter the choice:"))
+    if (N == 1):
+        b = b+obj.meals()
+    elif (N == 2):
+        b = b+obj.chapathi()
+    elif (N == 3):
+        b = b+obj.noodles()
+    elif (N == 4):
+        b = b+obj.coffee()
+    elif (N == 5):
+        b = b+obj.Tea()
+    elif (N == 6):
+        b = b+obj.Pizza()
+    elif (N == 7):
+        b = b+obj.Burger()
+    elif (N == 8):
+        b = b+obj.French_Fries()
+    elif (N == 9):
+        b = b+obj.Dosa()
+    else:
+        break
+print("The total cost is :", b)

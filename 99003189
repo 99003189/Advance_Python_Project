@@ -88,4 +88,3 @@ while 1:
     else:
         break
 print("The total cost is :", b)
-

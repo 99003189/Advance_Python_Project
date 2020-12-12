@@ -1,0 +1,136 @@
+class drinks():
+    def pepsi(self):
+        print("Enter the Quantity ")
+        self.c = (int(input())).__mul__(15)
+        return self.c
+
+    def sprite(self):
+        print("Enter the Quantity ")
+        self.c = (int(input())).__mul__(15)
+        return self.c
+
+
+class lunch(drinks):
+    def meals(self):
+        print("Enter the Quantity ")
+        self.c = (int(input())).__mul__(50)
+        return self.c
+
+
+class break_fast(drinks):
+    def chapathi(self):
+        self.c = (int(input())).__mul__(30)
+        return self.c
+
+    def Dosa(self):
+        print("Enter the Quantity ")
+        self.c = (int(input())).__mul__(20)
+        return self.c
+
+    def Idli(self):
+        print("Enter the Quantity ")
+        self.c = (int(input())).__mul__(10)
+        return self.c
+
+
+class snacks(drinks):
+    def coffee(self):
+        print("Enter the Quantity ")
+        self.c = (int(input())).__mul__(15)
+        return self.c
+
+    def Tea(self):
+        print("Enter the Quantity ")
+        self.c = (int(input())).__mul__(12)
+        return self.c
+
+    def noodles(self):
+        print("Enter the Quantity ")
+        self.c = (int(input())).__mul__(40)
+        return self.c
+
+    def Pizza(self):
+        print("Enter the Quantity ")
+        self.c = (int(input())).__mul__(30)
+        return self.c
+
+    def Burger(self):
+        print("Enter the Quantity ")
+        self.c = (int(input())).__mul__(35)
+        return self.c
+
+    def French_Fries(self):
+        print("Enter the Quantity ")
+        self.c = (int(input())).__mul__(25)
+        return self.c
+
+
+class menu:
+    def call(self):
+        print("Welcome to Cafeteria")
+        print("Please select the necessities that are available")
+        print("1 for Meals the cost is 50/-")
+        print("2 for Chapthi the cost is 30/-")
+        print("3 for noodles the cost is 40/-")
+        print("4 for coffee the cost is 15/-")
+        print("5 for Tea the cost is 12/-")
+        print("6 for Pizza the cost is 30/-")
+        print("7 for Burger the cost is 35/-")
+        print("8 for French_Fries the cost is 25/-")
+        print("9 for Dosa the cost is 20/-")
+        print("10 for Idli the cost is 10/-")
+        print("11 for pepsi the cost is 15")
+        print("12 for sprite the cost is 15")
+
+
+class choice(lunch, break_fast, snacks):
+    def __init__(self):
+        self.b = 0
+
+    def select(self):
+        while 1:
+            N = int(input("Enter the choice"))
+            if (N == 1):
+                self.b = (self.b).__add__(obj.meals())
+            elif (N == 2):
+                self.b = (self.b).__add__(obj.chapathi())
+            elif (N == 3):
+                self.b = (self.b).__add__(obj.noodles())
+            elif (N == 4):
+                self.b = (self.b).__add__(obj.coffee())
+            elif (N == 5):
+                self.b = (self.b).__add__(obj.Tea())
+            elif (N == 6):
+                self.b = (self.b).__add__(obj.Pizza())
+            elif (N == 7):
+                self.b = (self.b).__add__(obj.Burger())
+            elif (N == 8):
+                self.b = (self.b).__add__(obj.French_Fries())
+            elif (N == 9):
+                self.b = (self.b).__add__(obj.Dosa())
+            elif (N == 10):
+                self.b = (self.b).__add__(obj.Idli())
+            elif (N == 11):
+                self.b = (self.b).__add__(obj.pepsi())
+            elif (N == 12):
+                self.b = (self.b).__add__(obj.sprite())
+            else:
+                break
+        print("The total Cost:", self.b)
+
+
+class Final:
+    def __init__(self):
+        self.lg = self.Visting()
+
+    class Visiting:
+        def display(self):
+            print("Thank you for visting")
+
+
+object1 = menu()
+object1.call()
+obj = choice()
+obj.select()
+g = trail.Visiting()
+g.display()
